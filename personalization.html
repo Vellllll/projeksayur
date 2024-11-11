@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Personalisasi Makanan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        * {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            background-image: url("/assets/pexels-enginakyurt-1435904.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .clickable-card {
+            cursor: pointer;
+            padding: 20px;
+        }
+
+        .form-check-input {
+            filter: hue-rotate(200deg);
+        }
+
+        .animated {
+            animation: pulse 1s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(1, 108, 29, 0.2);
+            /* Adjust values as needed */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg pt-3 pb-3">
+        <div class="container card h-100" style="opacity: 0.95;">
+            <div class="row">
+                <h1 class="mt-4 text-center text-success">Personalisasikan makananmu!</h1>
+            </div>
+            <form>
+                <div class="form-group mt-3 mb-5" style="padding-inline: 250px;">
+                    <div class="row mb-4" style="height: 20vh;">
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Rendah Gula
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/sugar.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Rendah Lemak
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/no-fat.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Rendah Karbohidrat
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/food.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4" style="height: 20vh;">
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Rendah Kalori
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/calories.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Tinggi Protein
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/steak.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Keto
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/avocado.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5" style="height: 20vh;">
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Vegan
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/plant-based.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Gluten-Free
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/gluten-free.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card mb-3 clickable-card border-2 h-100">
+                                <div class="text-center mb-3">
+                                    Dairy-Free
+                                </div>
+                                <div class="text-center">
+                                    <img src="/assets/lactose-free.png" alt="" width="50%" class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 mb-3">Cari Makanan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const clickableCards = document.querySelectorAll('.clickable-card');
+
+        clickableCards.forEach(card => {
+            card.addEventListener('click', () => {
+                if (card.classList.contains('border-success')) {
+                    card.classList.remove('border-success')
+                } else {
+                    card.classList.add('border-success')
+
+                }
+                card.classList.add('animated');
+                setTimeout(() => {
+                    card.classList.remove('animated');
+                }, 200);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
