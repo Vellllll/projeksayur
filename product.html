@@ -23,26 +23,31 @@
           <div class="row">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <div>
-                <span href="#" class="text-decoration-none">&larr;</span>
+                <a href="dashboard.html" class="text-decoration-none text-black">&larr;</a>
               </div>
               <div class="d-flex">
                 <input
-                  class="form-control me-2"
+                  class="form-control me-2 rounded-pill"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
+                  style="width: 750px;"
                 />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
               </div>
               <div>
                 <a href="#" class="text-decoration-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    class="bi bi-cart" viewBox="0 0 16 16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-cart text-black"
+                    viewBox="0 0 16 16"
+                  >
                     <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                </svg>
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                    />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -147,121 +152,175 @@
                 <p class="text-muted text-decoration-line-through">Rp8.900</p>
               </div>
               <h2>Rp7.600</h2>
-              <span class="badge bg-secondary">Konvensional</span>
+              <span class="badge bg-secondary mb-3">Konvensional</span>
               <p class="text-muted">
-                Tersedia untuk <span class="text-success">Hari ini</span>
-                <span class="text-info">Besok</span>
+                Tersedia untuk <span class="badge bg-success">Hari ini</span>
+                <span class="badge bg-info">Besok</span>
               </p>
             </div>
           </div>
           <hr />
           <!-- Related Products Section -->
-          <div class="mt-5">
-              <div class="d-flex justify-content-between">
-              <p>Yang lain beli ini juga!</p>
-              <p class="text-success">Lihat semua</p>
-            </div>
-              <div
-              id="relatedProductsCarousel"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="d-flex justify-content-start">
-                    <!-- Related Product 1 -->
-                    <div class="card me-3" style="width: 8rem">
-                      <img
-                        src="./assets/avocado.png"
-                        class="card-img-top"
-                        alt="Product 1"
-                      />
-                      <div class="card-body text-center">
-                        <h6 class="card-title">Rp9.700</h6>
-                        <p class="card-text small">
-                          Minuman Susu Fermentasi Yakult 5 pcs Original
-                        </p>
-                        <button class="btn btn-outline-success btn-sm">
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Related Product 2 -->
-                    <div class="card me-3" style="width: 8rem">
-                      <img
-                        src="/assets/kangkung.jpg"
-                        class="card-img-top"
-                        alt="Product 2"
-                      />
-                      <div class="card-body text-center">
-                        <h6 class="card-title">Rp13.900</h6>
-                        <p class="card-text small">
-                          Anggur Merah Red Globe Seeded
-                        </p>
-                        <button class="btn btn-outline-success btn-sm">
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Related Product 3 -->
-                    <div class="card me-3" style="width: 8rem">
-                      <img
-                        src="./assets/kangkung 2.jpg"
-                        class="card-img-top"
-                        alt="Product 3"
-                      />
-                      <div class="card-body text-center">
-                        <h6 class="card-title">Rp11.300</h6>
-                        <p class="card-text small">Salak Pondoh 500 g</p>
-                        <button class="btn btn-outline-success btn-sm">
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Related Product 4 -->
-                    <div class="card me-3" style="width: 8rem">
-                      <img
-                        src="./assets/kangkung 3.jpg"
-                        class="card-img-top"
-                        alt="Product 4"
-                      />
-                      <div class="card-body text-center">
-                        <h6 class="card-title">Rp14.500</h6>
-                        <p class="card-text small">Kelengkeng Import 250 g</p>
-                        <button class="btn btn-outline-success btn-sm">
-                          +
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+          <!-- <div class="mt-3"> -->
+          <div class="d-flex justify-content-between">
+            <p>Yang lain beli ini juga!</p>
+            <p class="text-success">Lihat semua</p>
+          </div>
+          <div class="row mb-3" style="height: 15%">
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#relatedProductsCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#relatedProductsCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="d-flex justify-content-between">
+            <p>Produk Serupa Lainnya</p>
+            <p class="text-success">Lihat semua</p>
+          </div>
+          <div class="row mb-3" style="height: 15%">
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <img src="./assets/product1.jpg" alt="" class="w-100" />
+                <div class="card-description p-2">
+                  <div class="product-description fw-bold">Rp7.000</div>
+                  <div class="product-description">Kembang kol putih</div>
+                  <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <div class="card mt-3">
+              <div class="card-body">
+                <h4 class="card-title">Deskripsi</h4>
+                <p>
+                  Kangkung adalah sayuran hijau yang populer di banyak negara
+                  Asia. Kangkung memiliki daun panjang dan batang berongga,
+                  serta dikenal dengan teksturnya yang renyah dan rasanya yang
+                  segar. Sayuran ini sering digunakan dalam berbagai hidangan,
+                  seperti tumis kangkung dan sup, karena mudah dimasak dan
+                  memiliki rasa yang enak.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-3">
+              <div class="card-body">
+                <h4 class="card-title">Umur Simpan</h4>
+                <p>2-6 bulan</p>
+              </div>
+            </div>
+            <div class="card mt-3">
+              <div class="card-body">
+                <h4 class="card-title">Kandungan dan Nutrisi</h4>
+                <p>
+                  Kangkung kaya akan nutrisi yang penting untuk kesehatan tubuh,
+                  antara lain: <br>
+                  - Vitamin A: Membantu menjaga kesehatan mata dan meningkatkan
+                  sistem kekebalan tubuh. <br>
+                  - Vitamin C: Berperan sebagai
+                  antioksidan yang membantu melindungi tubuh dari radikal bebas
+                  dan meningkatkan daya tahan tubuh. <br>
+                  - Zat Besi: Berguna untuk
+                  pembentukan hemoglobin dan membantu mencegah anemia.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-3">
+              <div class="card-body">
+                <h4 class="card-title">Petunjuk Penyimpanan</h4>
+                <p>
+                    - Simpan kangkung di dalam kantong plastik atau wadah kedap udara dan letakkan di laci sayuran di lemari es. <br>
+                    - Sebaiknya dikonsumsi dalam 2-3 hari agar kesegarannya tetap terjaga. <br>
+                    - Jangan mencuci kangkung sebelum disimpan, karena kelembapan dapat mempercepat pembusukan. Cuci hanya saat akan digunakan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Sayurbox</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-dark">Berita & Promo</a></li>
+                  <li><a href="#" class="text-dark">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Bantuan & Panduan</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-dark">Bantuan</a></li>
+                  <li><a href="#" class="text-dark">Kebijakan & Privasi</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
