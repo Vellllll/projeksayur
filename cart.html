@@ -25,6 +25,30 @@
         .card {
             cursor: pointer;
         }
+
+        nav {
+            background-color: #2d2f22;
+            color: white;
+        }
+
+        .card-send {
+            background-color: #bec5a4;
+            border: 1px solid #2d2f22;
+            color: #2d2f22;
+        }
+
+        .increment-button, .tebus-button {
+            background-color: #68604c;
+            color: white;
+        }
+
+        .look-all {
+            color: #8a8e74;
+        }
+
+        .tebus-murah {
+            background-color: #f1ead8;
+        }
     </style>
 </head>
 
@@ -32,8 +56,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-10">
-                <nav class="sticky-top mb-2">
-                    <div class="d-flex justify-content-around p-4 bg-white">
+                <nav class="sticky-top mb-2 rounded-bottom-3">
+                    <div class="d-flex justify-content-around p-4">
                         <div>
                             < </div>
                                 <div class="fw-bold">
@@ -49,7 +73,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-2">
-                        <div class="card border border-success p-2 bg-success-subtle" style="font-size: 0.75rem;">
+                        <div class="card card-send p-2" style="font-size: 0.75rem;">
                             <div>13 Nov</div>
                             <div class="fw-bold">Besok</div>
                             <div>Semua barang tersedia</div>
@@ -87,9 +111,9 @@
                         </div>
                     </div>
                     <div class="">
-                        <a class="btn btn-success">-</a>
+                        <a class="btn increment-button">-</a>
                         <span class="mx-2">1</span>
-                        <a class="btn btn-success">+</a>
+                        <a class="btn increment-button">+</a>
                     </div>
                 </div>
                 <div class="d-flex mb-3 gap-3">
@@ -113,9 +137,9 @@
                         </div>
                     </div>
                     <div class="">
-                        <a class="btn btn-success">-</a>
+                        <a class="btn increment-button">-</a>
                         <span class="mx-2">1</span>
-                        <a class="btn btn-success">+</a>
+                        <a class="btn increment-button">+</a>
                     </div>
                 </div>
                 <div class="d-flex mb-3 gap-3">
@@ -139,60 +163,148 @@
                         </div>
                     </div>
                     <div class="">
-                        <a class="btn btn-success">-</a>
+                        <a class="btn increment-button">-</a>
                         <span class="mx-2">1</span>
-                        <a class="btn btn-success">+</a>
+                        <a class="btn increment-button">+</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between mb-3">
-                    <div class="fw-semibold">Ayo tebus murah</div>
-                    <div class="text-success">Lihat semua</div>
+                <div class="tebus-murah px-4 py-3 rounded-3 mb-3">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="fw-semibold">Ayo tebus murah</div>
+                        <div class="look-all">Lihat semua</div>
+                    </div>
+                    <div class="row" style="height: 25%;">
+                        <div class="col-3">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row" style="height: 25%;">
-                    <div class="col-3">
-                        <div class="card h-100">
-                            <img src="./assets/product1.jpg" alt="" class="w-100">
-                            <div class="card-description p-2">
-                                <div class="product-description fw-bold">Rp7.000</div>
-                                <div class="product-description">Kembang kol putih</div>
-                                <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
-                                <button class="btn btn-success product-description w-100 mt-3">Tebus</button>
+                <div class="others mb-3">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="fw-semibold">Produk serupa</div>
+                        <div class="look-all">Lihat semua</div>
+                    </div>
+                    <div class="row" style="height: 25%;">
+                        <div class="col-2">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card h-100">
+                                <img src="./assets/product1.jpg" alt="" class="w-100">
+                                <div class="card-description p-2">
+                                    <div class="product-description fw-bold">Rp7.000</div>
+                                    <div class="product-description">Kembang kol putih</div>
+                                    <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
+                                    <button class="btn product-description w-100 mt-3 tebus-button">Tebus</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card h-100">
-                            <img src="./assets/product1.jpg" alt="" class="w-100">
-                            <div class="card-description p-2">
-                                <div class="product-description fw-bold">Rp7.000</div>
-                                <div class="product-description">Kembang kol putih</div>
-                                <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
-                                <button class="btn btn-success product-description w-100 mt-3">Tebus</button>
+
+                </div>
+                <div class="row justify-content-center sticky-bottom">
+                    <!-- <div class="col-12"> -->
+                        <nav class="d-flex justify-content-between p-3 rounded-top-3">
+                            <div>
+                                <div class="fw-bold">Total: Rp 48.000</div>
+                                <div>Anda akan mendapat 48 poin dari transaksi ini!</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card h-100">
-                            <img src="./assets/product1.jpg" alt="" class="w-100">
-                            <div class="card-description p-2">
-                                <div class="product-description fw-bold">Rp7.000</div>
-                                <div class="product-description">Kembang kol putih</div>
-                                <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
-                                <button class="btn btn-success product-description w-100 mt-3">Tebus</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card h-100">
-                            <img src="./assets/product1.jpg" alt="" class="w-100">
-                            <div class="card-description p-2">
-                                <div class="product-description fw-bold">Rp7.000</div>
-                                <div class="product-description">Kembang kol putih</div>
-                                <div class="product-description">1 kg, 1 pcs + 3 lainnya</div>
-                                <button class="btn btn-success product-description w-100 mt-3">Tebus</button>
-                            </div>
-                        </div>
-                    </div>
+                            <div>hai</div>
+                        </nav>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
